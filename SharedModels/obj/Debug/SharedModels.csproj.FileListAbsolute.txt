@@ -1,0 +1,4 @@
+C:\Users\ORDI\documents\visual studio 2013\Projects\SharedModels\bin\Debug\SharedModels.dll
+C:\Users\ORDI\documents\visual studio 2013\Projects\SharedModels\bin\Debug\SharedModels.pdb
+C:\Users\ORDI\documents\visual studio 2013\Projects\SharedModels\obj\Debug\SharedModels.dll
+C:\Users\ORDI\documents\visual studio 2013\Projects\SharedModels\obj\Debug\SharedModels.pdb

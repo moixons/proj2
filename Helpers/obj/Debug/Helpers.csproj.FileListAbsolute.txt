@@ -1,0 +1,9 @@
+C:\Users\ORDI\documents\visual studio 2013\Projects\Helpers\bin\Debug\Helpers.dll
+C:\Users\ORDI\documents\visual studio 2013\Projects\Helpers\bin\Debug\Helpers.pdb
+C:\Users\ORDI\documents\visual studio 2013\Projects\Helpers\bin\Debug\ConnectionsManager.dll
+C:\Users\ORDI\documents\visual studio 2013\Projects\Helpers\bin\Debug\SharedModels.dll
+C:\Users\ORDI\documents\visual studio 2013\Projects\Helpers\bin\Debug\ConnectionsManager.pdb
+C:\Users\ORDI\documents\visual studio 2013\Projects\Helpers\bin\Debug\SharedModels.pdb
+C:\Users\ORDI\documents\visual studio 2013\Projects\Helpers\obj\Debug\Helpers.csprojResolveAssemblyReference.cache
+C:\Users\ORDI\documents\visual studio 2013\Projects\Helpers\obj\Debug\Helpers.dll
+C:\Users\ORDI\documents\visual studio 2013\Projects\Helpers\obj\Debug\Helpers.pdb

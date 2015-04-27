@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="USERS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PASSWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BIRTHDAY" Type="DateTime" Precision="0" Nullable="true" />
+    <Property Name="COUNTRY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="true" />
+    <Property Name="AVATAR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="true" />
+    <NavigationProperty Name="REGISTER" Relationship="TestingModel.USERSREGISTER" FromRole="USERS" ToRole="REGISTER" />
+  </EntityType>
+  <EntityContainer Name="TestingEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="USERS" EntityType="Self.USERS" />
+    <EntitySet Name="REGISTER" EntityType="TestingModel.REGISTER" />
+    <AssociationSet Name="USERSREGISTER" Association="TestingModel.USERSREGISTER">
+      <End Role="USERS" EntitySet="USERS" />
+      <End Role="REGISTER" EntitySet="REGISTER" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="REGISTER">
+    <Key>
+      <PropertyRef Name="IDUSER" />
+    </Key>
+    <Property Name="IDUSER" Type="Int32" Nullable="false" />
+    <Property Name="DLOGIN" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CONNECT" Type="Boolean" Nullable="false" />
+    <Property Name="COUNT" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="USERS" Relationship="TestingModel.USERSREGISTER" FromRole="REGISTER" ToRole="USERS" />
+  </EntityType>
+  <Association Name="USERSREGISTER">
+    <End Type="TestingModel.USERS" Role="USERS" Multiplicity="1" />
+    <End Type="TestingModel.REGISTER" Role="REGISTER" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="USERS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="REGISTER">
+        <PropertyRef Name="IDUSER" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

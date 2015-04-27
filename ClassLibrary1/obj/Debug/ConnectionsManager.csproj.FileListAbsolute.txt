@@ -1,0 +1,7 @@
+C:\Users\ORDI\documents\visual studio 2013\Projects\ClassLibrary1\bin\Debug\ConnectionsManager.dll
+C:\Users\ORDI\documents\visual studio 2013\Projects\ClassLibrary1\bin\Debug\ConnectionsManager.pdb
+C:\Users\ORDI\documents\visual studio 2013\Projects\ClassLibrary1\bin\Debug\SharedModels.dll
+C:\Users\ORDI\documents\visual studio 2013\Projects\ClassLibrary1\bin\Debug\SharedModels.pdb
+C:\Users\ORDI\documents\visual studio 2013\Projects\ClassLibrary1\obj\Debug\ConnectionsManager.csprojResolveAssemblyReference.cache
+C:\Users\ORDI\documents\visual studio 2013\Projects\ClassLibrary1\obj\Debug\ConnectionsManager.dll
+C:\Users\ORDI\documents\visual studio 2013\Projects\ClassLibrary1\obj\Debug\ConnectionsManager.pdb
